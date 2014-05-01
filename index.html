@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes, target-densitydpi=device-dpi"/>
+
+   <title>Sidin pls</title>
+   <meta name="author" content="Dietrich Daroch"/>
+
+   <!-- Styling -->
+   <!-- jQuery -->
+   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+   <!-- Boostrap -->
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" type="text/css" href="stylesheets/sidingpls.css" media="screen"/>
+   <!-- Custom JS -->
+   <script type="text/javascript" src="js/sidingpls.js"></script>
+</head>
+<body>
+
+<div class="site">
+
+  <!-- HEADER -->
+  <div class"bootstrap-row-fix">
+    <header
+      class="
+        row
+        dark-transparency
+        header-padding
+        "
+      >
+      <div
+        class="
+          col-md-8 col-md-offset-2
+          col-sm-10 col-sm-offset-1
+          col-xs-12
+          "
+        >
+        <h1 id="title">Siding pls</h1>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- CONTENT -->
+  <div class="row">
+    <div
+      class="
+        col-md-8 col-md-offset-2
+        col-sm-10 col-sm-offset-1
+        col-xs-12
+        medium-transparency
+        round5
+        main-borders
+        "
+      >
+      <div id="content">
+        <form id="LoginForm" role=="form" method='post' action='https://intrawww.ing.puc.cl/siding/index.phtml' name='LoginForm' target='home_iframe'>
+          <fieldset>
+            <div class="form-group">
+              <input type='text'     class="form-control" id="login"  name='login'  placeholder='user' autofocus='autofocus'></input>
+            </div>
+            <div class="form-group">
+              <input type='password' class="form-control" id="passwd" name='passwd' placeholder='pass'></input>
+            </div>
+
+            <div class="form-group">
+              <input type='submit'   class="btn btn-primary" style="width:100%;" value='Sidin pls'></input>
+            </div>
+
+            <input type='hidden' name='sw'></input>
+            <input type='hidden' name='sh'></input>
+            <input type='hidden' name='cd'></input>
+          </fieldset>
+        </form>
+        <iframe name='home_iframe' src="about:blank" style='display:none;'/>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- FOOTER -->
+  <footer class="row">
+    <div
+      class="
+        col-md-8 col-md-offset-2
+        col-sm-10 col-sm-offset-1
+        col-xs-12
+        no-h-padding
+        "
+      >
+        <div class="col-md-6 col-sm6 col-xs-6 left">
+          <p>
+            <!--Dietrich Daroch<br />-->
+            dietr1ch (definitely not at) acm.org
+          </p>
+        </div>
+        <div class="col-md-6 col-sm6 col-xs-6 right">
+          <p>
+            <a href="http://github.com/Dietr1ch/">github.com/Dietr1ch</a><br />
+          </p>
+        </div>
+      </div>
+  </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/** Reset **/
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {*/
+  /*color: #fff;*/
+/*}*/
+
+/** Background **/
+html, body {
+  height: 100%;
+  background-color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.boostrap-row-fix {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+/** Transparency **/
+.dark-transparency {
+  background: rgba(21, 21, 21);
+  background: rgba(21, 21, 21, 0.7);
+}
+.medium-transparency {
+  background: rgba(21, 21, 21);
+  background: rgba(21, 21, 21, 0.5);
+}
+.light-transparency {
+  background: rgba(21, 21, 21);
+  background: rgba(21, 21, 21, 0.5);
+}
+
+
+.round5 {
+  /*I have the feeling that this is defined somewhere else*/
+  border-radius: 0.5em;
+}
+
+.header-padding {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+#title {
+  margin: 0;
+  color: #fff;
+  font-size: 3.3em;
+  font-weight: 700;
+  text-shadow: #111 0 0 10px;
+}
+
+
+.site {
+  text-align: justify;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.no-h-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-v-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.padding-v-1em {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.main-borders {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
