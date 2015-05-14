@@ -7,8 +7,14 @@
 html, body {
   height: 100%;
   background-color: #222;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+a,p {
+  color: #fff;
+  font-size: 1.1em;
+  text-shadow: #111 0 0 10px;
 }
 
 .boostrap-row-fix {

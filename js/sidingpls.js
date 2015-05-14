@@ -1,9 +1,9 @@
-
 function randomBG(){
-  var r = Math.floor(Math.random() * 192);
-  var g = Math.floor(Math.random() * 192);
-  var b = Math.floor(Math.random() * 192);
-  var col = 'rgb('+r+','+g+','+b+')';
+  var h = Math.floor(360*Math.random());
+  var s = 50+20*Math.random();
+  var l = 30+20*Math.random();
+
+  var col = 'hsl('+h+','+s+'%,'+l+'%)';
   document.body.style.background = col;
 }
 
@@ -42,6 +42,13 @@ function registerListeners(){
     }
     else{
       $("iframe").on("load",function(){
+        $(window).bind('load', function() {
+          alert('derp, pwd pls');
+        })
+        //$("#LoginRow").hide();
+        //window.stop();
+        //$("#SidingRow").load('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml');
+        //stopTimer();
         window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml');
       });
 
@@ -51,6 +58,11 @@ function registerListeners(){
       $div = $('div[class=loading]').show(600);
     }
 
+  });
+
+  $("body").keydown(function(event) {
+    if(Math.random()>0.4)
+      randomBG();
   });
 }
 
