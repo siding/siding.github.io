@@ -15,6 +15,31 @@ a,p {
   color: #fff;
   font-size: 1.1em;
   text-shadow: #111 0 0 10px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+a:hover {
+  color: #fff;
+  transform: scale(2);
+}
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  .icon > svg path {
+    fill: #fff;
+  }
 }
 
 .boostrap-row-fix {
