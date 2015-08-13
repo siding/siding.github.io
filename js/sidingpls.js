@@ -30,26 +30,19 @@ function registerListeners(){
   $pwd = $('input[id=passwd]');
 
   $form.submit(function(e) {
-    usr = $usr.val();
-    pwd = $pwd.val();
+    usr_l = $usr.val().length;
+    pwd_l = $pwd.val().length;
 
 
-    if (usr.length<1){
+    if (usr_l<1) {
       alert('derp, usr pls');
     }
-    else if (pwd.length<1){
+    else if (pwd_l<1) {
       alert('derp, pwd pls');
     }
-    else{
-      $("iframe").on("load",function(){
-        $(window).bind('load', function() {
-          alert('derp, pwd pls');
-        })
-        //$("#LoginRow").hide();
-        //window.stop();
-        //$("#SidingRow").load('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml');
-        //stopTimer();
-        window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml');
+    else {
+      $('iframe').bind('load', function() {
+        window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=22_2015&acc_inicio=mis_cursos');
       });
 
 
@@ -60,7 +53,7 @@ function registerListeners(){
 
   });
 
-  $("body").keydown(function(event) {
+  $('body').keydown(function(event) {
     if(Math.random()>0.4)
       randomBG();
   });
@@ -69,7 +62,7 @@ function registerListeners(){
 
 
 
-document.addEventListener("page:load", function(){
+document.addEventListener('page:load', function(){
   registerListeners();
 });
 $(document).ready(function(){
