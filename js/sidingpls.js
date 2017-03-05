@@ -24,6 +24,19 @@ function runTask(task, frequencyInMilliseconds) {
   }, taskTime);
 }
 
+function getHomepageIRI(){
+	var d = new Date();
+	var m = d.getMonth();
+	var y = d.getFullYear();
+	// too easy, don't read
+	if (!m) {
+		y--;
+		m=1<<4;
+	}
+	var s = 1 + Math.floor(m>>3);
+	return "https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=2" + s + "_" + y + "&acc_inicio=mis_cursos";
+}
+
 function registerListeners(){
   $form = $('form[id=LoginForm]');
   $usr = $('input[id=login]');
@@ -42,7 +55,7 @@ function registerListeners(){
     }
     else {
       $('iframe').bind('load', function() {
-        window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=21_2017&acc_inicio=mis_cursos');
+        window.location.replace(getHomepageIRI());
       });
 
 
