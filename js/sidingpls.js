@@ -42,7 +42,7 @@ function registerListeners(){
     }
     else {
       $('iframe').bind('load', function() {
-        window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=22_2016&acc_inicio=mis_cursos');
+        window.location.replace('https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=21_2017&acc_inicio=mis_cursos');
       });
 
 
