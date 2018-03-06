@@ -1,3 +1,7 @@
+function setReferer(){
+  document.referer = "https://www.ing.uc.cl";	
+}
+
 function randomBG(){
   var h = Math.floor(360*Math.random());
   var s = 50+20*Math.random();
@@ -79,6 +83,7 @@ document.addEventListener('page:load', function(){
   registerListeners();
 });
 $(document).ready(function(){
+  setReferer();
   randomBG();
   registerListeners();
 });
