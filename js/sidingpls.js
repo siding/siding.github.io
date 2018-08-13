@@ -37,7 +37,7 @@ function getHomepageIRI(){
 		y--;
 		m=1<<4;
 	}
-	var s = 1 + Math.floor(m>>3);
+	var s = Math.ceil(m / 6);
 	return "https://intrawww.ing.puc.cl/siding/dirdes/ingcursos/cursos/index.phtml?per_lista_cursos=2" + s + "_" + y + "&acc_inicio=mis_cursos";
 }
 
